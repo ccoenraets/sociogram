@@ -1,0 +1,9 @@
+<% if (id) { %>
+<li><a href="#me">
+    <img src="https://graph.facebook.com/<%= id %>/picture?width=32&height=32" width="18" height="18"/>
+    <%= name %>
+</a></li>
+<li><a href="#" class="logout">Logout</a></li>
+<% } else { %>
+<li><a href="#" class="login">Login</a></li>
+<% } %>

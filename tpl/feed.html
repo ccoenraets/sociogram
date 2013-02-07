@@ -1,0 +1,17 @@
+<ul>
+    <% for(var item in data) { %>
+    <li><% if (data[item].message) { %><%= data[item].message %><br/><% } %>
+        <% if (data[item].story) { %><%= data[item].story %><br/><% } %>
+        <% if (data[item].link) { %><a href="<%= data[item].link %>"><%= data[item].link %></a><br/><% } %>
+        <% if (data[item].created_time) { %><%= data[item].created_time %><% } %>
+    <% } %>
+</ul>
+
+<ul class="pager">
+    <% if (paging.previous) { %>
+    <li><a href="#" class="previous">&larr; Previous</a></li>
+    <% } %>
+    <% if (paging.next) { %>
+    <li><a href="#" class="next">Next &rarr;</a></li>
+    <% } %>
+</ul>

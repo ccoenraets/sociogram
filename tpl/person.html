@@ -1,0 +1,19 @@
+<img src="https://graph.facebook.com/<%= id %>/picture?type=large" style="float:left;"/>
+<h3 style="padding: 0 0 0px 12px;display: inline-block;"><%= name %></h3>
+<p style="clear: both"></p>
+<br/>
+<table class="table table-striped">
+    <tr><td>name</td><td><%= name %></td></tr>
+    <tr><td>first_name</td><td><%= first_name %></td></tr>
+    <tr><td>last_name</td><td><%= last_name %></td></tr>
+    <tr><td>gender</td><td><%= gender %></td></tr>
+    <tr><td>username</td><td><%= username %></td></tr>
+    <tr><td>link</td><td><%= link %></td></tr>
+    <tr><td>locale</td><td><%= locale %></td></tr>
+    <tr><td>timezone</td><td><%= timezone %></td></tr>
+</table>
+
+
+<a href="#person/<%= id %>/mutualfriends" class="btn">Mutual Friends</a>
+<a href="#person/<%= id %>/friends" class="btn">Friends</a>
+<a href="#person/<%= id %>/feed" class="btn">Feed</a>
